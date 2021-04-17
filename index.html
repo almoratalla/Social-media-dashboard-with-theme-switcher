@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- <html lang="en" data-theme="dark"> -->
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="top-bg white"></div>
+  <div class="global-container">
+    <div class="container__header">
+      <header>
+        <div class="header__branding">
+          <h1>Social Media Dashboard</h1>
+          <span>Total Followers: 23,004</span>
+        </div>
+        <div class="header__theme">
+          <span>Dark Mode</span>
+          <input type="checkbox" name="theme" id="theme">
+        </div>
+      </header>
+    </div>
+    <div class="container__main">
+      <main>
+        <section class="showcase__section">
+          <div class="card fb">
+            <div class="card__owner">
+              <img src="./images/icon-facebook.svg" alt="fb">
+              <span>@nathanf</span>
+            </div>
+            <h3>1987</h3>
+            <span class="card__desc">Followers</span>
+            <div class="card__update up">
+              <img src="./images/icon-up.svg" alt="up">
+              <p class="up">12 Today</p>
+            </div>
+          </div>
+          <div class="card tw">
+            <div class="card__owner">
+              <img src="./images/icon-twitter.svg" alt="fb">
+              <span>@nathanf</span>
+            </div>
+            <h3>1044</h3>
+            <span class="card__desc">Followers</span>
+            <div class="card__update up">
+              <img src="./images/icon-up.svg" alt="up">
+              <p class="up">99 Today</p>
+            </div>
+          </div>
+          <div class="card ig">
+            <div class="card__owner">
+              <img src="./images/icon-instagram.svg" alt="fb">
+              <span>@realnathanf</span>
+            </div>
+            <h3>11k</h3>
+            <span class="card__desc">Followers</span>
+            <div class="card__update up">
+              <img src="./images/icon-up.svg" alt="up">
+              <p class="up">1099 Today</p>
+            </div>
+          </div>
+          <div class="card yt">
+            <div class="card__owner">
+              <img src="./images/icon-youtube.svg" alt="fb">
+              <span>Nathan F.</span>
+            </div>
+            <h3>8239</h3>
+            <span class="card__desc">Subscribers</span>
+            <div class="card__update down">
+              <img src="./images/icon-down.svg" alt="down">
+              <p class="down">144 Today</p>
+            </div>
+          </div>
+        </section>
+        <section class="overview__section">
+          <h4>Overview - Today</h4>
+          <div class="overview__cards">
+            <div class="card fb">
+              <h6>Page Views</h6>
+              <img src="./images/icon-facebook.svg" alt="fb">
+              <span>87</span>
+               <div class="card__update up">
+                <img src="./images/icon-up.svg" alt="up">
+                <p>3%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Likes</h6>
+              <img src="./images/icon-facebook.svg" alt="fb">
+              <span>52</span>
+               <div class="card__update down">
+                <img src="./images/icon-down.svg" alt="down">
+                <p>2%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Likes</h6>
+              <img src="./images/icon-instagram.svg" alt="ig">
+              <span>5462</span>
+               <div class="card__update up">
+                <img src="./images/icon-up.svg" alt="up">
+                <p>2257%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Profile Views</h6>
+              <img src="./images/icon-instagram.svg" alt="fb">
+              <span>52k</span>
+               <div class="card__update up">
+                <img src="./images/icon-up.svg" alt="up">
+                <p>1375%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Retweets</h6>
+              <img src="./images/icon-twitter.svg" alt="fb">
+              <span>117</span>
+               <div class="card__update up">
+                <img src="./images/icon-up.svg" alt="up">
+                <p>303%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Likes</h6>
+              <img src="./images/icon-twitter.svg" alt="fb">
+              <span>507</span>
+               <div class="card__update up">
+                <img src="./images/icon-up.svg" alt="up">
+                <p>553%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Likes</h6>
+              <img src="./images/icon-youtube.svg" alt="fb">
+              <span>107</span>
+               <div class="card__update down">
+                <img src="./images/icon-down.svg" alt="up">
+                <p>19%</p>
+               </div>
+            </div>
+            <div class="card">
+              <h6>Total Views</h6>
+              <img src="./images/icon-youtube.svg" alt="fb">
+              <span>1407</span>
+               <div class="card__update down">
+                <img src="./images/icon-down.svg" alt="down">
+                <p>12%</p>
+               </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alain Moratalla</a>.
+  </div>
+  <script>
+    document.querySelector('input[type="checkbox"]').addEventListener('change', e => {
+      console.log('hey', this, e.target)
+      let theme = e.target.checked ? ['data-theme', 'dark'] : ['data-theme', 'light'];
+      document.documentElement.setAttribute(...theme)
+    })
+  </script>
+</body>
+</html>

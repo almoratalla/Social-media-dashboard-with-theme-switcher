@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<!-- <html lang="en" data-theme="dark"> -->
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="dist/css/style.css">
+  <!-- <script src="./script.js" defer></script> -->
 </head>
 <body>
   <div class="top-bg white"></div>
@@ -28,14 +21,15 @@
         </div>
         <div class="header__theme">
           <span>Dark Mode</span>
-          <input type="checkbox" name="theme" id="theme">
+          <input type="checkbox" id="theme" name="theme" />
+          <label for="theme">Toggle</label>
         </div>
       </header>
     </div>
     <div class="container__main">
       <main>
         <section class="showcase__section">
-          <div class="card fb">
+          <div class="card fb" draggable="true">
             <div class="card__owner">
               <img src="./images/icon-facebook.svg" alt="fb">
               <span>@nathanf</span>
@@ -47,7 +41,7 @@
               <p class="up">12 Today</p>
             </div>
           </div>
-          <div class="card tw">
+          <div class="card tw" draggable="true">
             <div class="card__owner">
               <img src="./images/icon-twitter.svg" alt="fb">
               <span>@nathanf</span>
@@ -59,7 +53,7 @@
               <p class="up">99 Today</p>
             </div>
           </div>
-          <div class="card ig">
+          <div class="card ig" draggable="true">
             <div class="card__owner">
               <img src="./images/icon-instagram.svg" alt="fb">
               <span>@realnathanf</span>
@@ -71,7 +65,7 @@
               <p class="up">1099 Today</p>
             </div>
           </div>
-          <div class="card yt">
+          <div class="card yt" draggable="true">
             <div class="card__owner">
               <img src="./images/icon-youtube.svg" alt="fb">
               <span>Nathan F.</span>
@@ -87,94 +81,101 @@
         <section class="overview__section">
           <h4>Overview - Today</h4>
           <div class="overview__cards">
-            <div class="card fb">
+            <div class="card fb" draggable="true">
               <h6>Page Views</h6>
               <img src="./images/icon-facebook.svg" alt="fb">
               <span>87</span>
-               <div class="card__update up">
+              <div class="card__update up">
                 <img src="./images/icon-up.svg" alt="up">
                 <p>3%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card fb" draggable="true">
               <h6>Likes</h6>
               <img src="./images/icon-facebook.svg" alt="fb">
               <span>52</span>
-               <div class="card__update down">
+              <div class="card__update down">
                 <img src="./images/icon-down.svg" alt="down">
                 <p>2%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card ig" draggable="true">
               <h6>Likes</h6>
               <img src="./images/icon-instagram.svg" alt="ig">
               <span>5462</span>
-               <div class="card__update up">
+              <div class="card__update up">
                 <img src="./images/icon-up.svg" alt="up">
                 <p>2257%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card ig" draggable="true">
               <h6>Profile Views</h6>
-              <img src="./images/icon-instagram.svg" alt="fb">
+              <img src="./images/icon-instagram.svg" alt="ig">
               <span>52k</span>
-               <div class="card__update up">
+              <div class="card__update up">
                 <img src="./images/icon-up.svg" alt="up">
                 <p>1375%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card tw" draggable="true">
               <h6>Retweets</h6>
-              <img src="./images/icon-twitter.svg" alt="fb">
+              <img src="./images/icon-twitter.svg" alt="tw">
               <span>117</span>
-               <div class="card__update up">
+              <div class="card__update up">
                 <img src="./images/icon-up.svg" alt="up">
                 <p>303%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card tw" draggable="true">
               <h6>Likes</h6>
-              <img src="./images/icon-twitter.svg" alt="fb">
+              <img src="./images/icon-twitter.svg" alt="tw">
               <span>507</span>
-               <div class="card__update up">
+              <div class="card__update up">
                 <img src="./images/icon-up.svg" alt="up">
                 <p>553%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card yt" draggable="true">
               <h6>Likes</h6>
-              <img src="./images/icon-youtube.svg" alt="fb">
+              <img src="./images/icon-youtube.svg" alt="yt">
               <span>107</span>
-               <div class="card__update down">
+              <div class="card__update down">
                 <img src="./images/icon-down.svg" alt="up">
                 <p>19%</p>
-               </div>
+              </div>
             </div>
-            <div class="card">
+            <div class="card yt" draggable="true">
               <h6>Total Views</h6>
-              <img src="./images/icon-youtube.svg" alt="fb">
+              <img src="./images/icon-youtube.svg" alt="yt">
               <span>1407</span>
-               <div class="card__update down">
+              <div class="card__update down">
                 <img src="./images/icon-down.svg" alt="down">
                 <p>12%</p>
-               </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
     </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Alain Moratalla</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/almoratalla" target="_blank" rel="noopener noreferrer">Alain Moratalla</a>.
+    </div>
   </div>
   <script>
+    document.querySelector('input[type="checkbox"]').checked = false;
+    function trans() {
+      document.documentElement.classList.add('transition');
+      window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+      }, 1000)
+    }
     document.querySelector('input[type="checkbox"]').addEventListener('change', e => {
-      console.log('hey', this, e.target)
+      trans()
       let theme = e.target.checked ? ['data-theme', 'dark'] : ['data-theme', 'light'];
       document.documentElement.setAttribute(...theme)
     })
   </script>
 </body>
+
 </html>

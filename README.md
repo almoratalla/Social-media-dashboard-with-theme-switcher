@@ -1,93 +1,137 @@
-# Frontend Mentor - Social media dashboard with theme switcher
+# Frontend Mentor - Social media dashboard with theme switcher solution
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Thanks for checking out this front-end coding challenge.
+---
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Frontend Mentor - Social media dashboard with theme switcher solution](#frontend-mentor---social-media-dashboard-with-theme-switcher-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-**To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+---
 
-## The challenge
+## Overview
+Greetings Everyone! This project is made for the purpose of practicing and improving my CSS skills. This challenge is setup by [`Frontend Mentor`](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). To know more about this challenge, read the *challenge.md*.
 
-Your challenge is to build out this Social Media Dashboard and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+**`Difficulty:`**` Junior`
 
-## Where to find everything
+### Screenshot
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Screen: `1440x800 light desktop`
+![1440x800 light desktop screenshot](./screens/screenshot-light-desktop-1440x800.png)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+Screen: `1440x800 dark desktop`
+![1440x800 dark desktop screenshot](./screens/screenshot-dark-desktop-1440x800.png)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Screen: `1440x800 light active desktop`
+![1440x800 light active desktop screenshot](./screens/screenshot-light-active-desktop-1440x800.png)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+Screen: `1440x800 dark active desktop`
+![1440x800 dark active desktop screenshot](./screens/screenshot-dark-active-desktop-1440x800.png)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Screen: `375x2387 light mobile`
+![375x2387 light mobile screenshot](./screens/screenshot-light-mobile-375x2387.png)
 
-## Building your project
+Screen: `375x2387 dark mobile`
+![375x2387 dark mobile screenshot](./screens/screenshot-dark-mobile-375x2387.png)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Links
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Solution URL: [Github repo url](https://github.com/almoratalla/Social-media-dashboard-with-theme-switcher)
+- Live Site URL: [My github page](https://almoratalla.github.io/projects/learning/Social-media-dashboard-with-theme-switcher)
 
-## Deploying your project
+## My process
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Built with
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- Semantic HTML5 markup
+- SASS (scss syntax)
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### What I learned
 
-## Create a custom `README.md`
+This is my first attempt to do a theme switcher so it's really fun to discover that you can achieve this task simply using css variables. Also, I looked up some resources, copied the way they made theme switcher and really liked the way you can change the html element property to set a data-theme property. 
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Also, I tried to apply drag events on the dashboard so I can reposition elements by dragging the cards but I didn't took my time to finish it. It may be a possible future revision in this case.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+For styling, as always I started with a mobile-first approach: 
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```css
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
 
-## Submitting your solution
+*, *::before, *::after{
+    box-sizing: inherit;
+}
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+}
+```
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+I also implemented css grid this time instead of my usual flexbox. But I think I still like flexbox more.
 
-## Sharing your solution
+Since the given designs in the style-guide were created to `375px` and `1440px` for Mobile and Desktop respectively, I added these:
 
-There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+*@For screens* `1920 x 1080` and `1366 width and above` 
+*body* `1920px X 1076px/937px` *or* `120rem x 67.25rem/58.6rem`
+```css
+@media screen and (min-width: 1366px){
+...
+}
+```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+Lastly, for sizes relative to the original design, I estimated the sizes by pasting the `jpg` file into AdobeXD and eyeballed its dimensions. 
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Continued development
 
-## Got feedback for us?
+As mentioned above, this can be continued with the addition of drag and drop api. It will make the dashboard customizable. Another addition for this implementation could be to use apis for each social media to track actual data. This can also be integrated with OAuth2 for auth.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+### Useful resources
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- [Frontendmentor.io](https://www.frontendmentor.io/resources) - Frontendmentor itself has a list of great resources!.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) - Great reference for syntax and properties.
+- [CSS Tricks! - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Something I go back to as a reference for flexbox.
+- [CSS Tricks! - Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Reference I used in this project for CSS Grid.
+- [Google Everything](https://www.google.com/) - You don't know something? Google it! Or any search engine that you prefer. I just mainly use it to go to Stack Overflow lol
+- [Stack Overflow](https://stackoverflow.com/) - the ever loving and benevolent!
+- [Design Course Vid for Toggle Mode](https://www.youtube.com/watch?v=ZKXv_ZHQ654) - This is my main reference for theme switcher
+- [Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) - This is for future development
 
-**Have fun building!** 🚀
+## Author
+
+- Website - [Alain Moratalla](https://github.com/almoratalla)
+- Frontend Mentor - [@almoratalla](https://www.frontendmentor.io/profile/almoratalla)
+- Twitter - [@almoratalla](https://twitter.com/almoratalla)
+
+## Acknowledgments
+
+I tip all the hats in the world for FrontEnd Mentor for giving these challenges. I would also like to thank all the references I used for this project. Thank you very much.

@@ -59,7 +59,7 @@ Screen: `375x2387 dark mobile`
 ### Links
 
 - Solution URL: [Github repo url](https://github.com/almoratalla/Social-media-dashboard-with-theme-switcher)
-- Live Site URL: [My github page](https://almoratalla.github.io/projects/learning/Social-media-dashboard-with-theme-switcher)
+- Live Site URL: [My github page](https://almoratalla.github.io/projects/learning/social-media-dashboard-with-theme-switcher)
 
 ## My process
 
